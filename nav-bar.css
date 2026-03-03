@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  margin-top: 8px;
+}
+
+:root {
+  --text-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --text-color: #ffffff;
+  }
+}
+
+.quick-links {
+  display: flex;
+  color: var(--text-color);
+  text-align: center;
+  padding-right: 20px;
+  padding-bottom: 13px;
+
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.quick-links:hover {
+  color: rgb(10, 67, 128);
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  display: flex;
+
+}
