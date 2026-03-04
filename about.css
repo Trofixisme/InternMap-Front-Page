@@ -1,0 +1,35 @@
+:root {
+    --text-color: #000000;
+}   
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #ffffff;
+    }
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+.body {
+    margin-left: 60px;
+}
+
+.section {
+    height: 500px;
+    padding-right: 75px;
+    @media (prefers-color-scheme: dark) {
+        color: #ffffff;    
+    }
+    font-weight: 500;
+}
+
+.background {
+    background-image: url("/Images/Background.png");
+    padding: 20px 75px;
+    margin-left: -60px;
+    color: black;
+    box-shadow: 0 0px 40px rgba(243, 243, 243, 0.962); 
+    text-shadow: 0 0px 100px rgba(216, 216, 216, 0.962);
+}
